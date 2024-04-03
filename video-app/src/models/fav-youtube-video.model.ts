@@ -12,26 +12,26 @@ const FavYoutubeVideoSchema = new Schema<IFavYoutubeVideoSchema>(
   {
     title: {
       type: String,
-      required: true
+      required: true,
     },
     description: {
       type: String,
-      required: true
+      required: true,
     },
     thumbleUrl: {
       type: String,
       default: "https://via.placeholder.com/1600x900.webp",
-      required: false
+      required: false,
     },
     watched: {
       type: Boolean,
       default: false,
-      required: true
+      required: true,
     },
     youtuberName: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
   { timestamps: true }
 );

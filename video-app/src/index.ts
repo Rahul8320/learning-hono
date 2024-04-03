@@ -6,7 +6,7 @@ import videoRouter from "./routes/video.routes";
 
 const app = new Hono().basePath("/api"); // --> /api
 
-// middelwares
+// middlewares
 app.use(poweredBy());
 app.use(logger());
 
@@ -14,9 +14,9 @@ dbConnect()
   .then(() => {
     app.route("/videos", videoRouter); // --> /api/videos
   })
-  .catch(err => {
+  .catch((err) => {
     console.error(err);
-    app.get("/*", c => {
+    app.get("/*", (c) => {
       return c.json(
         { message: `Failed to connect mongodb: ${err.message}` },
         500
