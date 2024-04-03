@@ -1,0 +1,117 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "my-app",
+    "dateExported": "2024-04-03T07:35:34.311Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "82237f55-96d9-4891-9db6-5f3051908458",
+            "colId": "fb16cabe-b380-457e-9fee-39b25dfdf00f",
+            "containerId": "",
+            "name": "get videos",
+            "url": "http://localhost:3000/videos",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-04-03T06:08:37.626Z",
+            "modified": "2024-04-03T06:08:37.626Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cf2cc775-41fd-420d-92c3-ec248e8d67e5",
+            "colId": "fb16cabe-b380-457e-9fee-39b25dfdf00f",
+            "containerId": "",
+            "name": "add video",
+            "url": "localhost:3000/videos",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-03T06:08:48.659Z",
+            "modified": "2024-04-03T06:08:48.659Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"videoName\": \"Learn NextJs\",\n  \"channelName\": \"chai aur code\",\n  \"duration\": \"5 hours\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ceeed008-e1ec-4eb2-8f3e-767a23b39653",
+            "colId": "fb16cabe-b380-457e-9fee-39b25dfdf00f",
+            "containerId": "",
+            "name": "update video",
+            "url": "localhost:3000/videos/f8e9fae9-4123-4cbd-8e8d-fcb7ff9ed540",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-04-03T07:01:57.716Z",
+            "modified": "2024-04-03T07:21:09.814Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"videoName\": \"Learn Hono\",\n  \"channelName\": \"Hitesh Choudory\",\n  \"duration\": \"90 minutes\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9aae66c9-1295-4673-b76e-ae21103cdd51",
+            "colId": "fb16cabe-b380-457e-9fee-39b25dfdf00f",
+            "containerId": "",
+            "name": "Get Video by id",
+            "url": "localhost:3000/videos/f8e9fae9-4123-4cbd-8e8d-fcb7ff9ed540",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-04-03T07:15:05.944Z",
+            "modified": "2024-04-03T07:20:19.473Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "226b88af-2e06-4aa6-ab2a-f72686ceb226",
+            "colId": "fb16cabe-b380-457e-9fee-39b25dfdf00f",
+            "containerId": "",
+            "name": "stream videos",
+            "url": "http://localhost:3000/stream-videos",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-04-03T07:23:25.943Z",
+            "modified": "2024-04-03T07:23:37.367Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "626ff523-0a2a-434e-a445-a7487dc8c0d7",
+            "colId": "fb16cabe-b380-457e-9fee-39b25dfdf00f",
+            "containerId": "",
+            "name": "delete video",
+            "url": "http://localhost:3000/videos/a4e19f43-b56d-4e54-9dfb-aa7e58634624",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-04-03T07:27:47.813Z",
+            "modified": "2024-04-03T07:30:08.781Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ad1b3a7f-78f4-4296-b226-fc08c79199ee",
+            "colId": "fb16cabe-b380-457e-9fee-39b25dfdf00f",
+            "containerId": "",
+            "name": "delete all videos",
+            "url": "http://localhost:3000/videos",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-04-03T07:27:55.962Z",
+            "modified": "2024-04-03T07:29:16.912Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
