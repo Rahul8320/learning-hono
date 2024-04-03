@@ -3,7 +3,7 @@ import { Schema, model } from "mongoose";
 export interface IFavYoutubeVideoSchema {
   title: string;
   description: string;
-  thumbleUrl?: string;
+  thumbnailUrl?: string;
   watched: boolean;
   youtuberName: string;
 }
@@ -18,7 +18,7 @@ const FavYoutubeVideoSchema = new Schema<IFavYoutubeVideoSchema>(
       type: String,
       required: true,
     },
-    thumbleUrl: {
+    thumbnailUrl: {
       type: String,
       default: "https://via.placeholder.com/1600x900.webp",
       required: false,
